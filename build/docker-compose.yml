@@ -1,0 +1,9 @@
+version: '3'
+services:
+  php74:
+    restart: always
+    build:
+      context: php74
+    volumes:
+      - ../:/var/symfony-example-command:cached
+    container_name: php74
